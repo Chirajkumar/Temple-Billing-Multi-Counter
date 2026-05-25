@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-18T15:32:40.333Z",
+  "collections": {
+    "User": [
+      {
+        "_id": "6a0b2bd24eb1bc2cf7e04cd8",
+        "name": "Admin User",
+        "email": "admin@temple.com",
+        "password": "$2a$10$e9fZ0muj6Y2Cxhz9zU69VeaBvnp0wrq7Qnwd7A.8le1ylpPKuOMpO",
+        "role": "Admin",
+        "counter": null,
+        "permissions": [],
+        "active": true,
+        "createdAt": "2026-05-18T15:10:10.123Z",
+        "updatedAt": "2026-05-18T15:10:10.123Z",
+        "__v": 0
+      }
+    ],
+    "Devotee": [
+      {
+        "_id": "6a0b2bd24eb1bc2cf7e04cd4",
+        "name": "Rama Krishna",
+        "mobile": "9876543210",
+        "address": "123 Temple St",
+        "email": "rama@example.com",
+        "createdAt": "2026-05-18T15:10:10.105Z",
+        "__v": 0,
+        "updatedAt": "2026-05-18T15:10:10.108Z"
+      },
+      {
+        "_id": "6a0b2c5a0782afcf1ad583b7",
+        "name": "Chiraj kumar",
+        "mobile": "7259819255",
+        "address": "chirajkenjila@gmail.com, Mangaluru, Karnataka - 574323",
+        "email": "chirajkenjila@gmail.com",
+        "createdAt": "2026-05-18T15:12:26.595Z",
+        "updatedAt": "2026-05-18T15:12:26.595Z",
+        "__v": 0
+      }
+    ],
+    "Seva": [
+      {
+        "_id": "6a0b2bd24eb1bc2cf7e04cda",
+        "name": "Abhishekam",
+        "category": "Daily Seva",
+        "price": 2500,
+        "duration": 30,
+        "maxDevotees": 1,
+        "availableDays": [],
+        "createdBy": "6a0b2bd24eb1bc2cf7e04cd8",
+        "counter": "Counter 1",
+        "active": true,
+        "__v": 0,
+        "createdAt": "2026-05-18T15:10:10.222Z",
+        "updatedAt": "2026-05-18T15:10:10.222Z"
+      },
+      {
+        "_id": "6a0b2bd24eb1bc2cf7e04cdb",
+        "name": "Archana",
+        "category": "Daily Seva",
+        "price": 500,
+        "duration": 15,
+        "maxDevotees": 1,
+        "availableDays": [],
+        "createdBy": "6a0b2bd24eb1bc2cf7e04cd8",
+        "counter": "Counter 1",
+        "active": true,
+        "__v": 0,
+        "createdAt": "2026-05-18T15:10:10.222Z",
+        "updatedAt": "2026-05-18T15:10:10.222Z"
+      }
+    ],
+    "Donation": [],
+    "Expense": [
+      {
+        "_id": "6a0b301d0782afcf1ad58529",
+        "category": "Maintenance",
+        "amount": 1000,
+        "description": "xxx",
+        "paymentMode": "Cash",
+        "receiptNo": "111",
+        "date": "2026-05-18T00:00:00.000Z",
+        "status": "Pending",
+        "createdAt": "2026-05-18T15:28:29.301Z",
+        "updatedAt": "2026-05-18T15:28:29.301Z",
+        "__v": 0
+      }
+    ],
+    "InventoryItem": [
+      {
+        "_id": "6a0b2f4d0782afcf1ad584dd",
+        "name": "oil",
+        "category": "Pooja",
+        "unit": "Liter",
+        "openingStock": 0,
+        "currentStock": 30,
+        "minStock": 100,
+        "supplier": "chiraj",
+        "createdAt": "2026-05-18T15:25:01.704Z",
+        "updatedAt": "2026-05-18T15:25:01.704Z",
+        "__v": 0
+      }
+    ],
+    "PrasadaItem": [
+      {
+        "_id": "6a0b2e8d0782afcf1ad58496",
+        "name": "Laddu",
+        "category": "Sweet",
+        "unit": "Kg",
+        "price": 3000,
+        "openingStock": 0,
+        "currentStock": 50,
+        "minStock": 0,
+        "createdAt": "2026-05-18T15:21:49.873Z",
+        "updatedAt": "2026-05-18T15:21:49.873Z",
+        "__v": 0
+      }
+    ],
+    "ReceiptConfiguration": [],
+    "Room": [
+      {
+        "_id": "6a0b2ecb0782afcf1ad584b6",
+        "type": "AC Single",
+        "capacity": 4,
+        "price": 5000,
+        "status": "Active",
+        "facilities": "wifi",
+        "roomId": "101",
+        "createdAt": "2026-05-18T15:22:51.714Z",
+        "updatedAt": "2026-05-18T15:22:51.714Z",
+        "__v": 0
+      }
+    ],
+    "RoomBooking": [
+      {
+        "_id": "6a0b2f020782afcf1ad584cb",
+        "bookingId": "BK001",
+        "roomId": "101",
+        "bookedBy": "ramesh",
+        "mobile": "7259819255",
+        "checkIn": "2026-05-17T18:30:00.000Z",
+        "checkOut": "2026-05-18T18:30:00.000Z",
+        "persons": 4,
+        "specialRequests": "no",
+        "type": "AC Single",
+        "price": 5000,
+        "status": "Confirmed",
+        "createdAt": "2026-05-18T15:23:46.394Z",
+        "updatedAt": "2026-05-18T15:23:46.394Z",
+        "__v": 0
+      }
+    ],
+    "Staff": [
+      {
+        "_id": "6a0b31060782afcf1ad5855f",
+        "name": "Chiraj kumar",
+        "role": "Manager",
+        "phone": "7259819255",
+        "department": "Administration",
+        "status": "Active",
+        "createdAt": "2026-05-18T15:32:22.263Z",
+        "updatedAt": "2026-05-18T15:32:22.263Z",
+        "__v": 0
+      }
+    ],
+    "Counter": [
+      {
+        "_id": "6a0b2b5c9dbceab21df3078e",
+        "name": "Donation Counter",
+        "code": "CTR001",
+        "location": "entrance",
+        "assignedUser": "Ramesh",
+        "openingTime": "08:00",
+        "closingTime": "20:00",
+        "status": "Active",
+        "createdAt": "2026-05-18T15:08:12.808Z",
+        "updatedAt": "2026-05-18T15:11:52.385Z",
+        "__v": 0
+      }
+    ],
+    "Alert": [
+      {
+        "_id": "6a0b2bd24eb1bc2cf7e04ce5",
+        "title": "Low Stock Alert",
+        "message": "Prasada item \"Laddu\" stock below threshold.",
+        "type": "error",
+        "status": "active",
+        "timestamp": "2026-05-18T15:10:10.228Z",
+        "__v": 0
+      }
+    ],
+    "Festival": [
+      {
+        "_id": "6a0b30c30782afcf1ad5854f",
+        "name": "deepavali",
+        "startDate": "2026-09-18T00:00:00.000Z",
+        "endDate": "2026-09-22T00:00:00.000Z",
+        "specialSevas": "deeposthva",
+        "status": "Upcoming",
+        "createdAt": "2026-05-18T15:31:15.479Z",
+        "updatedAt": "2026-05-18T15:31:15.479Z",
+        "__v": 0
+      }
+    ],
+    "AuditLog": []
+  }
+}

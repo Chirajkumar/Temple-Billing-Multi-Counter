@@ -1,0 +1,556 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-20T06:52:42.175Z",
+  "collections": {
+    "User": [
+      {
+        "_id": "6a0d4fb72a1c246c669259f9",
+        "name": "Admin User",
+        "email": "admin@temple.com",
+        "password": "$2a$10$C6rizWB1yaborMWz5oY.EexOMUvH/FEbVWCuKlfgwTWl.NQ/1wapa",
+        "role": "Admin",
+        "counter": null,
+        "permissions": [],
+        "active": true,
+        "createdAt": "2026-05-20T06:07:51.423Z",
+        "updatedAt": "2026-05-20T06:07:51.423Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d56a69774bd9121575736",
+        "name": "chiraj",
+        "email": "chirajkenjila@gmail.com",
+        "password": "$2a$10$dsWMz.KQ1vBvzTE.DSXHV.OVgd65SMEEjYb/iTqaeJ/b3Bfr2sanG",
+        "role": "Accountant",
+        "counter": "Seva Counter",
+        "permissions": [],
+        "active": true,
+        "createdAt": "2026-05-20T06:37:26.363Z",
+        "updatedAt": "2026-05-20T06:37:26.363Z",
+        "__v": 0
+      }
+    ],
+    "Devotee": [
+      {
+        "_id": "6a0d4fb72a1c246c669259f5",
+        "name": "Rama Krishna",
+        "mobile": "9876543210",
+        "address": "123 Temple St",
+        "email": "rama@example.com",
+        "createdAt": "2026-05-20T06:07:51.409Z",
+        "__v": 0,
+        "updatedAt": "2026-05-20T06:07:51.412Z"
+      },
+      {
+        "_id": "6a0d4fb72a1c246c669259f6",
+        "name": "Sita Devi",
+        "mobile": "9876543211",
+        "address": "456 Main Rd",
+        "email": "sita@example.com",
+        "createdAt": "2026-05-20T06:07:51.410Z",
+        "__v": 0,
+        "updatedAt": "2026-05-20T06:07:51.413Z"
+      },
+      {
+        "_id": "6a0d58129774bd91215757a1",
+        "name": "ramesh",
+        "mobile": "7259819255",
+        "address": "mangalore, Mangaluru, Karnataka - 574323",
+        "email": "chirajkenjila@gmail.com",
+        "createdAt": "2026-05-20T06:43:30.519Z",
+        "updatedAt": "2026-05-20T06:43:30.519Z",
+        "__v": 0
+      }
+    ],
+    "Seva": [
+      {
+        "_id": "6a0d4fb72a1c246c669259fb",
+        "name": "Abhishekam",
+        "category": "Daily Seva",
+        "price": 2500,
+        "duration": 30,
+        "maxDevotees": 1,
+        "availableDays": [],
+        "createdBy": "6a0d4fb72a1c246c669259f9",
+        "counter": "Counter 1",
+        "active": true,
+        "__v": 0,
+        "createdAt": "2026-05-20T06:07:51.498Z",
+        "updatedAt": "2026-05-20T06:07:51.498Z"
+      },
+      {
+        "_id": "6a0d4fb72a1c246c669259fc",
+        "name": "Archana",
+        "category": "Daily Seva",
+        "price": 500,
+        "duration": 15,
+        "maxDevotees": 1,
+        "availableDays": [],
+        "createdBy": "6a0d4fb72a1c246c669259f9",
+        "counter": "Counter 1",
+        "active": true,
+        "__v": 0,
+        "createdAt": "2026-05-20T06:07:51.498Z",
+        "updatedAt": "2026-05-20T06:07:51.498Z"
+      },
+      {
+        "_id": "6a0d586e9774bd91215757ba",
+        "name": "archana",
+        "category": "Daily Seva",
+        "price": 50,
+        "duration": 5,
+        "maxDevotees": 20,
+        "availableDays": [
+          "Monday",
+          "Tuesday"
+        ],
+        "description": "xx",
+        "createdBy": "6a0d4fb72a1c246c669259f9",
+        "counter": "Donation Counter",
+        "active": true,
+        "createdAt": "2026-05-20T06:45:02.579Z",
+        "updatedAt": "2026-05-20T06:45:02.579Z",
+        "__v": 0
+      }
+    ],
+    "Donation": [
+      {
+        "_id": "6a0b36b0860ab2fd37dc7009",
+        "devoteeName": "ramesh",
+        "mobile": "7259819255",
+        "amount": 10000,
+        "type": "General Donation",
+        "description": "ww",
+        "status": "completed",
+        "receiptNo": "12334",
+        "paymentMode": "Cash",
+        "donationDate": "2026-05-18T00:00:00.000Z",
+        "createdBy": "6a0b365960b7d9b4812fe0d9",
+        "counter": "Seva Counter",
+        "createdAt": "2026-05-18T15:56:32.955Z",
+        "updatedAt": "2026-05-18T15:56:32.955Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d3882b613f7ef8c423a95",
+        "devoteeName": "ramesh",
+        "mobile": "7259819255",
+        "amount": 10000,
+        "type": "Annadanam (Food Donation)",
+        "description": "MANGALORE",
+        "status": "completed",
+        "receiptNo": "DRS123",
+        "paymentMode": "Cash",
+        "donationDate": "2026-05-20T00:00:00.000Z",
+        "createdBy": "6a0d37ef74f56ebc2c6f6fd4",
+        "counter": "Donation Counter",
+        "createdAt": "2026-05-20T04:28:50.836Z",
+        "updatedAt": "2026-05-20T04:28:50.836Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d58a19774bd91215757ce",
+        "devoteeName": "ramesh",
+        "mobile": "7259819255",
+        "amount": 10000,
+        "type": "Annadanam (Food Donation)",
+        "description": "mangalore",
+        "status": "completed",
+        "receiptNo": "12334",
+        "paymentMode": "Cash",
+        "donationDate": "2026-05-20T00:00:00.000Z",
+        "createdBy": "6a0d4fb72a1c246c669259f9",
+        "counter": "Donation Counter",
+        "createdAt": "2026-05-20T06:45:53.946Z",
+        "updatedAt": "2026-05-20T06:45:53.946Z",
+        "__v": 0
+      }
+    ],
+    "Expense": [
+      {
+        "_id": "6a08a3ee4d01a5041cb25b87",
+        "category": "Utilities",
+        "amount": 54,
+        "description": "bjj",
+        "paymentMode": "Cash",
+        "receiptNo": "",
+        "date": "2026-05-16T00:00:00.000Z",
+        "status": "Pending",
+        "createdAt": "2026-05-16T17:05:50.093Z",
+        "updatedAt": "2026-05-16T17:05:50.093Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d59bb9774bd9121575852",
+        "category": "Maintenance",
+        "amount": 1000,
+        "description": "xxx",
+        "paymentMode": "Cash",
+        "receiptNo": "111",
+        "date": "2026-05-20T00:00:00.000Z",
+        "status": "Pending",
+        "createdAt": "2026-05-20T06:50:35.447Z",
+        "updatedAt": "2026-05-20T06:50:35.447Z",
+        "__v": 0
+      }
+    ],
+    "InventoryItem": [
+      {
+        "_id": "6a0d3915b613f7ef8c423acc",
+        "name": "oil",
+        "category": "Pooja",
+        "unit": "Pack",
+        "openingStock": 0,
+        "currentStock": 10,
+        "minStock": 15,
+        "supplier": "chiraj",
+        "createdAt": "2026-05-20T04:31:17.232Z",
+        "updatedAt": "2026-05-20T04:31:17.232Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d594e9774bd912157580d",
+        "name": "oil",
+        "category": "Pooja",
+        "unit": "Liter",
+        "openingStock": 0,
+        "currentStock": 30,
+        "minStock": 35,
+        "supplier": "chiraj",
+        "createdAt": "2026-05-20T06:48:46.956Z",
+        "updatedAt": "2026-05-20T06:48:46.956Z",
+        "__v": 0
+      }
+    ],
+    "PrasadaItem": [
+      {
+        "_id": "6a0d38b7b613f7ef8c423aa9",
+        "name": "LADDU",
+        "category": "Sweet",
+        "unit": "Kg",
+        "price": 50,
+        "openingStock": 0,
+        "currentStock": 50,
+        "minStock": 0,
+        "createdAt": "2026-05-20T04:29:43.969Z",
+        "updatedAt": "2026-05-20T06:46:41.991Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d58c89774bd91215757db",
+        "name": "Laddu",
+        "category": "Sweet",
+        "unit": "Kg",
+        "price": 40,
+        "openingStock": 0,
+        "currentStock": 20,
+        "minStock": 0,
+        "createdAt": "2026-05-20T06:46:32.953Z",
+        "updatedAt": "2026-05-20T06:46:32.953Z",
+        "__v": 0
+      }
+    ],
+    "ReceiptConfiguration": [
+      {
+        "_id": "6a0b39bcfea9375d5bc44973",
+        "templeName": "shiva",
+        "address": "manglore",
+        "phone": "9844559941",
+        "email": "",
+        "gstin": "222222",
+        "receiptFooter": "Thank you for your contributiowwwwn",
+        "receiptPrefix": "REC",
+        "logo": "",
+        "createdBy": null,
+        "updatedBy": "6a0d4fb72a1c246c669259f9",
+        "createdAt": "2026-05-18T16:09:55.417Z",
+        "updatedAt": "2026-05-20T06:50:56.034Z",
+        "__v": 0
+      }
+    ],
+    "Room": [
+      {
+        "_id": "6a0d4fb72a1c246c669259fe",
+        "type": "AC Single",
+        "capacity": 1,
+        "price": 1500,
+        "status": "Active",
+        "facilities": "AC, TV, WiFi",
+        "roomId": "101",
+        "__v": 0,
+        "createdAt": "2026-05-20T06:07:51.501Z",
+        "updatedAt": "2026-05-20T06:07:51.501Z"
+      },
+      {
+        "_id": "6a0d4fb72a1c246c669259ff",
+        "type": "AC Double",
+        "capacity": 2,
+        "price": 2500,
+        "status": "Active",
+        "facilities": "AC, TV, WiFi, Balcony",
+        "roomId": "102",
+        "__v": 0,
+        "createdAt": "2026-05-20T06:07:51.501Z",
+        "updatedAt": "2026-05-20T06:07:51.501Z"
+      },
+      {
+        "_id": "6a0d4fb72a1c246c66925a00",
+        "type": "Non-AC Single",
+        "capacity": 1,
+        "price": 800,
+        "status": "Active",
+        "facilities": "Fan, Hot Water",
+        "roomId": "201",
+        "__v": 0,
+        "createdAt": "2026-05-20T06:07:51.501Z",
+        "updatedAt": "2026-05-20T06:07:51.501Z"
+      },
+      {
+        "_id": "6a0d4fb72a1c246c66925a01",
+        "type": "Non-AC Double",
+        "capacity": 2,
+        "price": 1400,
+        "status": "Maintenance",
+        "facilities": "Fan",
+        "roomId": "202",
+        "__v": 0,
+        "createdAt": "2026-05-20T06:07:51.501Z",
+        "updatedAt": "2026-05-20T06:07:51.501Z"
+      },
+      {
+        "_id": "6a0d4fb72a1c246c66925a02",
+        "type": "VIP Suite",
+        "capacity": 4,
+        "price": 5000,
+        "status": "Active",
+        "facilities": "AC, TV, Fridge, Kitchenette",
+        "roomId": "301",
+        "__v": 0,
+        "createdAt": "2026-05-20T06:07:51.501Z",
+        "updatedAt": "2026-05-20T06:07:51.501Z"
+      },
+      {
+        "_id": "6a0d58f99774bd91215757f0",
+        "type": "VIP Suite",
+        "capacity": 2,
+        "price": 5000,
+        "status": "Active",
+        "facilities": "wifi",
+        "roomId": "105",
+        "createdAt": "2026-05-20T06:47:21.605Z",
+        "updatedAt": "2026-05-20T06:47:21.605Z",
+        "__v": 0
+      }
+    ],
+    "RoomBooking": [
+      {
+        "_id": "6a09d11feba65043d0650779",
+        "bookingId": "BK001",
+        "roomId": "101",
+        "bookedBy": "fghj",
+        "mobile": "8574963521",
+        "checkIn": "2026-06-03T18:30:00.000Z",
+        "checkOut": "2026-06-05T18:30:00.000Z",
+        "persons": 1,
+        "specialRequests": "",
+        "type": "AC Single",
+        "price": 1500,
+        "status": "Confirmed",
+        "createdAt": "2026-05-17T14:30:55.007Z",
+        "updatedAt": "2026-05-17T14:30:55.007Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d59279774bd9121575800",
+        "bookingId": "BK002",
+        "roomId": "105",
+        "bookedBy": "ramesh",
+        "mobile": "7259819255",
+        "checkIn": "2026-05-19T18:30:00.000Z",
+        "checkOut": "2026-05-20T18:30:00.000Z",
+        "persons": 2,
+        "specialRequests": "xxx",
+        "type": "VIP Suite",
+        "price": 5000,
+        "status": "Confirmed",
+        "createdAt": "2026-05-20T06:48:07.380Z",
+        "updatedAt": "2026-05-20T06:48:07.380Z",
+        "__v": 0
+      }
+    ],
+    "Staff": [
+      {
+        "_id": "6a0d5a249774bd9121575887",
+        "name": "chiraj",
+        "role": "Pujari",
+        "phone": "7259819255",
+        "department": "Seva",
+        "status": "Active",
+        "createdAt": "2026-05-20T06:52:20.828Z",
+        "updatedAt": "2026-05-20T06:52:20.828Z",
+        "__v": 0
+      }
+    ],
+    "Counter": [
+      {
+        "_id": "6a0d3705e51409ac3b94366b",
+        "name": "Donation Counter",
+        "code": "CTR002",
+        "location": "Main Hall",
+        "assignedUser": "Suresh",
+        "openingTime": "09:00",
+        "closingTime": "21:00",
+        "status": "Active",
+        "createdAt": "2026-05-20T04:22:29.670Z",
+        "updatedAt": "2026-05-20T04:22:29.670Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d3726e51409ac3b943675",
+        "name": "Prasada Counter",
+        "code": "CTR003",
+        "location": "Main Hall",
+        "assignedUser": "Mahesh",
+        "openingTime": "09:00",
+        "closingTime": "21:00",
+        "status": "Active",
+        "createdAt": "2026-05-20T04:23:02.497Z",
+        "updatedAt": "2026-05-20T04:23:02.497Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d374ce51409ac3b943688",
+        "name": "Seva Counter",
+        "code": "CTR001",
+        "location": "Main Hall",
+        "assignedUser": "Ramesh",
+        "openingTime": "09:00",
+        "closingTime": "21:00",
+        "status": "Active",
+        "createdAt": "2026-05-20T04:23:40.763Z",
+        "updatedAt": "2026-05-20T04:23:40.763Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d570f9774bd912157575f",
+        "name": "Room Counter",
+        "code": "CTR004",
+        "location": "Main Hall",
+        "assignedUser": "Kumar",
+        "openingTime": "10:08",
+        "closingTime": "21:09",
+        "status": "Active",
+        "createdAt": "2026-05-20T06:39:11.902Z",
+        "updatedAt": "2026-05-20T06:39:11.902Z",
+        "__v": 0
+      }
+    ],
+    "Alert": [
+      {
+        "_id": "6a0d4fb72a1c246c66925a04",
+        "accountId": "6a0d4fb72a1c246c669259f9",
+        "title": "System Update",
+        "message": "System maintenance scheduled for tonight at 10 PM.",
+        "type": "warning",
+        "status": "active",
+        "timestamp": "2026-05-20T06:07:51.503Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d4fb72a1c246c66925a05",
+        "accountId": "6a0d4fb72a1c246c669259f9",
+        "title": "High Value Donation",
+        "message": "New donation of ₹25,000 received.",
+        "type": "success",
+        "status": "unread",
+        "timestamp": "2026-05-20T06:07:51.503Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d4fb72a1c246c66925a06",
+        "accountId": "6a0d4fb72a1c246c669259f9",
+        "title": "Low Stock Alert",
+        "message": "Prasada item \"Laddu\" stock below threshold.",
+        "type": "error",
+        "status": "active",
+        "timestamp": "2026-05-20T06:07:51.503Z",
+        "__v": 0
+      }
+    ],
+    "Festival": [
+      {
+        "_id": "6a0d5a029774bd9121575875",
+        "name": "deepavali",
+        "startDate": "2026-09-20T00:00:00.000Z",
+        "endDate": "2026-09-23T00:00:00.000Z",
+        "specialSevas": "deepavali",
+        "status": "Upcoming",
+        "createdAt": "2026-05-20T06:51:46.040Z",
+        "updatedAt": "2026-05-20T06:51:46.040Z",
+        "__v": 0
+      }
+    ],
+    "AuditLog": [
+      {
+        "_id": "6a0b3683860ab2fd37dc6fe0",
+        "user": "6a0b365960b7d9b4812fe0d9",
+        "action": "Add Seva",
+        "module": "Seva",
+        "details": "Seva created. sevaId=6a0b3683860ab2fd37dc6fde, name=Rudrabhisheka, price=50, counter=Seva Counter",
+        "ipAddress": "::1",
+        "timestamp": "2026-05-18T15:55:47.167Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0b36b0860ab2fd37dc700b",
+        "user": "6a0b365960b7d9b4812fe0d9",
+        "action": "Add Donation",
+        "module": "Donation",
+        "details": "Donation created. donationId=6a0b36b0860ab2fd37dc7009, amount=10000, type=General Donation, counter=Seva Counter",
+        "ipAddress": "::1",
+        "timestamp": "2026-05-18T15:56:32.958Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d3863b613f7ef8c423a8a",
+        "user": "6a0d37ef74f56ebc2c6f6fd4",
+        "action": "Add Seva",
+        "module": "Seva",
+        "details": "Seva created. sevaId=6a0d3863b613f7ef8c423a88, name=Rudrabhisheka, price=50, counter=Donation Counter",
+        "ipAddress": "::1",
+        "timestamp": "2026-05-20T04:28:19.234Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d3882b613f7ef8c423a97",
+        "user": "6a0d37ef74f56ebc2c6f6fd4",
+        "action": "Add Donation",
+        "module": "Donation",
+        "details": "Donation created. donationId=6a0d3882b613f7ef8c423a95, amount=10000, type=Annadanam (Food Donation), counter=Donation Counter",
+        "ipAddress": "::1",
+        "timestamp": "2026-05-20T04:28:50.838Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d586e9774bd91215757bc",
+        "user": "6a0d4fb72a1c246c669259f9",
+        "action": "Add Seva",
+        "module": "Seva",
+        "details": "Seva created. sevaId=6a0d586e9774bd91215757ba, name=archana, price=50, counter=Donation Counter",
+        "ipAddress": "::1",
+        "timestamp": "2026-05-20T06:45:02.581Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a0d58a19774bd91215757d0",
+        "user": "6a0d4fb72a1c246c669259f9",
+        "action": "Add Donation",
+        "module": "Donation",
+        "details": "Donation created. donationId=6a0d58a19774bd91215757ce, amount=10000, type=Annadanam (Food Donation), counter=Donation Counter",
+        "ipAddress": "::1",
+        "timestamp": "2026-05-20T06:45:53.948Z",
+        "__v": 0
+      }
+    ]
+  }
+}

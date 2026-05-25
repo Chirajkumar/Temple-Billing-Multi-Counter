@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-18T04:08:13.518Z",
+  "collections": {
+    "User": [
+      {
+        "_id": "6a08a002154401fd9dadc724",
+        "name": "Admin User",
+        "email": "admin@temple.com",
+        "password": "$2a$10$I2f26xsqV7Exu2koAE5/YOcIQBKNvmj/zrWuwENMpyCNWW.fQOKQ.",
+        "role": "Admin",
+        "counter": null,
+        "permissions": [],
+        "active": true,
+        "createdAt": "2026-05-16T16:49:06.598Z",
+        "updatedAt": "2026-05-16T16:49:06.598Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a09dac1eba65043d0650927",
+        "name": "Nishan",
+        "email": "nishan@gmail.com",
+        "password": "$2a$10$k8lfvsV6GtR0RgINSykaMexAGHyBoPd2CRyQwiu6PmvF26d5uDzHK",
+        "role": "Staff",
+        "counter": "Seva Counter",
+        "permissions": [],
+        "active": true,
+        "createdAt": "2026-05-17T15:12:01.112Z",
+        "updatedAt": "2026-05-17T15:12:01.112Z",
+        "__v": 0
+      }
+    ],
+    "Devotee": [
+      {
+        "_id": "6a08a002154401fd9dadc720",
+        "name": "Rama Krishna",
+        "mobile": "9876543210",
+        "address": "123 Temple St",
+        "email": "rama@example.com",
+        "createdAt": "2026-05-16T16:49:06.588Z",
+        "__v": 0,
+        "updatedAt": "2026-05-16T16:49:06.590Z"
+      },
+      {
+        "_id": "6a08a002154401fd9dadc721",
+        "name": "Sita Devi",
+        "mobile": "9876543211",
+        "address": "456 Main Rd",
+        "email": "sita@example.com",
+        "createdAt": "2026-05-16T16:49:06.588Z",
+        "__v": 0,
+        "updatedAt": "2026-05-16T16:49:06.590Z"
+      }
+    ],
+    "Seva": [
+      {
+        "_id": "6a08a002154401fd9dadc726",
+        "name": "Abhishekam",
+        "category": "Daily Seva",
+        "price": 2500,
+        "duration": 30,
+        "maxDevotees": 1,
+        "availableDays": [],
+        "createdBy": "6a08a002154401fd9dadc724",
+        "counter": "Counter 1",
+        "active": true,
+        "__v": 0,
+        "createdAt": "2026-05-16T16:49:06.665Z",
+        "updatedAt": "2026-05-16T16:49:06.665Z"
+      },
+      {
+        "_id": "6a08a002154401fd9dadc727",
+        "name": "Archana",
+        "category": "Daily Seva",
+        "price": 500,
+        "duration": 15,
+        "maxDevotees": 1,
+        "availableDays": [],
+        "createdBy": "6a08a002154401fd9dadc724",
+        "counter": "Counter 1",
+        "active": true,
+        "__v": 0,
+        "createdAt": "2026-05-16T16:49:06.666Z",
+        "updatedAt": "2026-05-16T16:49:06.666Z"
+      }
+    ],
+    "Donation": [],
+    "Expense": [
+      {
+        "_id": "6a08a3ee4d01a5041cb25b87",
+        "category": "Utilities",
+        "amount": 54,
+        "description": "bjj",
+        "paymentMode": "Cash",
+        "receiptNo": "",
+        "date": "2026-05-16T00:00:00.000Z",
+        "status": "Pending",
+        "createdAt": "2026-05-16T17:05:50.093Z",
+        "updatedAt": "2026-05-16T17:05:50.093Z",
+        "__v": 0
+      }
+    ],
+    "InventoryItem": [],
+    "PrasadaItem": [],
+    "ReceiptConfiguration": [],
+    "Room": [
+      {
+        "_id": "6a08a002154401fd9dadc729",
+        "type": "AC Single",
+        "capacity": 1,
+        "price": 1500,
+        "status": "Active",
+        "facilities": "AC, TV",
+        "roomId": "101",
+        "__v": 0,
+        "createdAt": "2026-05-16T16:49:06.667Z",
+        "updatedAt": "2026-05-17T14:27:19.772Z"
+      },
+      {
+        "_id": "6a08a002154401fd9dadc72a",
+        "type": "AC Double",
+        "capacity": 2,
+        "price": 2500,
+        "status": "Active",
+        "facilities": "AC, TV, WiFi, Balcony",
+        "roomId": "102",
+        "__v": 0,
+        "createdAt": "2026-05-16T16:49:06.667Z",
+        "updatedAt": "2026-05-16T16:49:06.667Z"
+      },
+      {
+        "_id": "6a08a002154401fd9dadc72b",
+        "type": "Non-AC Single",
+        "capacity": 1,
+        "price": 800,
+        "status": "Active",
+        "facilities": "Fan, Hot Water",
+        "roomId": "201",
+        "__v": 0,
+        "createdAt": "2026-05-16T16:49:06.667Z",
+        "updatedAt": "2026-05-16T16:49:06.667Z"
+      },
+      {
+        "_id": "6a08a002154401fd9dadc72c",
+        "type": "Non-AC Double",
+        "capacity": 2,
+        "price": 1400,
+        "status": "Maintenance",
+        "facilities": "Fan",
+        "roomId": "202",
+        "__v": 0,
+        "createdAt": "2026-05-16T16:49:06.667Z",
+        "updatedAt": "2026-05-16T16:49:06.667Z"
+      },
+      {
+        "_id": "6a08a002154401fd9dadc72d",
+        "type": "VIP Suite",
+        "capacity": 4,
+        "price": 5000,
+        "status": "Active",
+        "facilities": "AC, TV, Fridge, Kitchenette",
+        "roomId": "301",
+        "__v": 0,
+        "createdAt": "2026-05-16T16:49:06.667Z",
+        "updatedAt": "2026-05-16T16:49:06.667Z"
+      },
+      {
+        "_id": "6a08a2114d01a5041cb25b1d",
+        "type": "AC Double",
+        "capacity": 5,
+        "price": 666663,
+        "status": "Active",
+        "roomId": "ROOM005",
+        "createdAt": "2026-05-16T16:57:53.606Z",
+        "updatedAt": "2026-05-16T16:57:53.606Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a09d067eba65043d065072f",
+        "type": "AC Single",
+        "capacity": 2,
+        "price": 4586,
+        "status": "Inactive",
+        "facilities": "",
+        "roomId": "745",
+        "createdAt": "2026-05-17T14:27:51.262Z",
+        "updatedAt": "2026-05-17T14:27:51.262Z",
+        "__v": 0
+      }
+    ],
+    "RoomBooking": [
+      {
+        "_id": "6a09d11feba65043d0650779",
+        "bookingId": "BK001",
+        "roomId": "101",
+        "bookedBy": "fghj",
+        "mobile": "8574963521",
+        "checkIn": "2026-06-03T18:30:00.000Z",
+        "checkOut": "2026-06-05T18:30:00.000Z",
+        "persons": 1,
+        "specialRequests": "",
+        "type": "AC Single",
+        "price": 1500,
+        "status": "Confirmed",
+        "createdAt": "2026-05-17T14:30:55.007Z",
+        "updatedAt": "2026-05-17T14:30:55.007Z",
+        "__v": 0
+      }
+    ],
+    "Staff": [],
+    "Counter": [
+      {
+        "_id": "6a09d540eba65043d0650878",
+        "name": "Seva Counter",
+        "code": "788",
+        "location": "47888",
+        "assignedUser": "Suresh",
+        "openingTime": "20:19",
+        "closingTime": "20:20",
+        "status": "Active",
+        "createdAt": "2026-05-17T14:48:32.095Z",
+        "updatedAt": "2026-05-17T14:48:32.095Z",
+        "__v": 0
+      }
+    ],
+    "Alert": [
+      {
+        "_id": "6a08a002154401fd9dadc730",
+        "title": "High Value Donation",
+        "message": "New donation of ₹25,000 received.",
+        "type": "success",
+        "status": "unread",
+        "timestamp": "2026-05-16T16:49:06.669Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a08a002154401fd9dadc731",
+        "title": "Low Stock Alert",
+        "message": "Prasada item \"Laddu\" stock below threshold.",
+        "type": "error",
+        "status": "active",
+        "timestamp": "2026-05-16T16:49:06.669Z",
+        "__v": 0
+      }
+    ],
+    "Festival": [],
+    "AuditLog": []
+  }
+}
